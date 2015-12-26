@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <title>Potomu</title>
+    <link rel="stylesheet" href="css/framework7.material.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.css">
+    <link rel="stylesheet" href="css/my-app.css">
+    <!--link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css"-->
+    <link rel="icon" href="img/logo.png">
+  </head>
+  <body>
+
+<div data-page="login-screen-embedded" class="page">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="left"><a onClick="window.location.replace('login.html')" class="back link icon-only"><i class="icon icon-back"></i></a></div>
+      <div class="left">Kembali</div>
+    </div>
+  </div>
+  <div class="page-content login-screen-content" style="padding-top:20px">
+    <div class="login-screen-title"><h6>Pendaftaran Akun</h6></div>
+    <form action="#">
+      <div class="list-block inputs-list">
+        <ul>
+          <li class="item-content">
+            <div class="item-inner"> 
+              <div class="item-title label">Foto</div>
+              <div class="item-input">
+                <input type="file" name="foto" style="cursor:pointer" required />
+              </div><hr>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner"> 
+              <div class="item-title label">Nama Depan</div>
+              <div class="item-input">
+                <input type="text" name="nm_dpn" placeholder="Nama Depan Anda" required />
+              </div><hr>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner"> 
+              <div class="item-title label">Nama Belakang</div>
+              <div class="item-input">
+                <input type="text" name="nm_blkng" placeholder="Nama Belakang Anda" required />
+              </div><hr>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner"> 
+              <div class="item-title label">Alamat</div>
+              <div class="item-input">
+                <input type="text" name="alamat" placeholder="Alamat Anda" required />
+              </div><hr>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner"> 
+              <div class="item-title label">Username</div>
+              <div class="item-input">
+                <input type="text" name="username" placeholder="Username Anda" required />
+              </div><hr>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner"> 
+              <div class="item-title label">Password</div>
+              <div class="item-input">
+                <input type="password" name="password" placeholder="Password Anda" required />
+              </div><hr>
+            </div>
+          </li>
+          <li class="item-content">
+            <div class="item-inner"> 
+              <div class="item-title label">Email</div>
+              <div class="item-input">
+                <input type="email" name="email" placeholder="Email Anda" required />
+              </div><hr>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block">
+        <p><input class="button button-fill color-green" value="Daftar" type="submit" id="login" /></p>
+        <p><input class="button button-fill color-green" value="Batal" type="reset" /></p>
+      </div>
+    </form>
+  </div>
+</div>
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <script type="text/javascript" src="js/kitchen-sink.js"></script>
+  </body>
+</html>

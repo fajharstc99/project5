@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <title>Potomu</title>
+    <link rel="stylesheet" href="css/framework7.material.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.css">
+    <link rel="stylesheet" href="css/my-app.css">
+    <!--link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css"-->
+	<script type="application/javascript">
+      function isNumberKeyTrue(evt)
+          {
+             var charCode = (evt.which) ? evt.which : event.keyCode
+             if (charCode > 65)
+                return false;         
+             return true;
+          }
+    </script>
+  </head>
+  <body>
+    <div class="statusbar-overlay"></div>
+    <div class="panel-overlay"></div>
+    <div class="panel panel-left panel-cover">
+      <div class="view navbar-fixed">
+        <div class="pages">
+          <div data-page="panel-left" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center" align="center">Fajar Nugraha Arqahtany</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="content-block">
+                <center>
+                	<a href="zonk.html" class="item-link close-panel">
+                    	<img src="img/Fajar.jpg" height="150px" width="150px" style="border-radius:50%; border:3px solid #039370" />
+                    </a>
+                </center>
+              </div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="keranjang.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Keranjang</div>
+                        </div>
+                      </div>
+                      </a>
+                  </li>
+                  <li><a href="zonk.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Pengaturan</div>
+                        </div>
+                      </div>
+                      </a>
+                  </li>
+                  <li><a href="info.html" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Info</div>
+                        </div>
+                      </div>
+                      </a>
+                  </li>
+                  <li><a onClick="window.location.replace('login.html')" class="item-link close-panel">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-title">Keluar</div>
+                        </div>
+                      </div>
+                      </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-right panel-reveal">
+      <div class="view view-right">
+        <div class="navbar">
+          <div class="center" align="center">Tentang</div>
+        </div>
+        <div class="page-content" style="padding-top:25px">
+          <div class="content-block">
+              <center>
+                <img src="img/Logo.png" height="100px" width="100px" />
+                <p align="justify">
+                    <b>Profil</b><br>Merupakan supplier bahan pangan untuk mempermudah para ibu-ibu rumah tangga dan wanita karir agar dapat memasak sesuai dengan selera yang mereka inginkan.
+                </p>
+                <p align="justify">
+                    <b>Kategori produk</b><br>
+                    - Buah-buahan<br>
+                    - Bumbu dapur<br>
+                    - Sayur-mayur<br>
+                    - Lauk-pauk<br>
+                </p>
+                <p>
+                    <table align="left">
+                        <tr>
+                            <td><b>Kontak</b></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td>admin@potomu.com</td>
+                        </tr>
+                        <tr>
+                            <td>Telp.</td>
+                            <td>:</td>
+                            <td>0451-xxx-xxx</td>
+                        </tr>
+                        <tr>
+                            <td>WhatsApp</td>
+                            <td>:</td>
+                            <td>xxxx-xxxx-xxxx</td>
+                        </tr>
+                        <tr>
+                            <td>BBM</td>
+                            <td>:</td>
+                            <td>XXXXXXX</td>
+                        </tr>
+                        <tr>
+                            <td>Facebook</td>
+                            <td>:</td>
+                            <td>Potomu</td>
+                        </tr>
+                    </table>
+                </p>
+              	<br><br><a href="#" class="button button-raised close-panel">OK</a>
+              </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages navbar-fixed">
+
+
+            <div data-page="tabs-swipeable" class="page toolbar-fixed">
+              <div class="navbar">
+                <div class="navbar-inner">
+                  <div class="left"><a href="#" data-panel="right" class="open-panel item-link"><img src="img/iconx.png" height="50px" height="50px" style="padding-top:5px" /></a></div>
+                  <div class="right"><a href="#" class="link open-panel icon-only"><i class="icon icon-bars"></i></a></div>
+                </div>
+              </div>
+              <div class="toolbar tabbar">
+                <div class="toolbar-inner">
+                <a href="#tab1" class="tab-link active"><img src="img/chat.png" height="30px" height="30px" /></a>
+                <a href="#tab2" class="tab-link"><img src="img/produk.png" height="30px" height="30px" /></a>
+                <a href="#tab3" class="tab-link"><img src="img/pengantar.png" height="30px" height="30px" /></a>
+                </div>
+              </div>
+              <div class="tabs-swipeable-wrap">
+                <div class="tabs">
+                
+                  <div id="tab1" class="page-content tab active">
+                    <div class="content-block">
+                      <div class="list-block">
+                        <center><h2>Pemesanan</h2>
+                        <ul><hr>
+                          <li><a href="pemesanan.html" class="item-link">
+                              <div class="item-content">20/12/2015  10:05:36</div>
+                              </a>
+                          </li><hr>
+                        </ul></center>
+                      </div> 
+                    </div>
+                  </div>
+                  <div id="tab2" class="page-content tab">
+                    <div class="content-block">
+                      <div class="list-block">
+                        <center><h2>Produk</h2><hr>
+                        <p>
+                        	<b>Sayuran Organik</b><br>
+                            <a href="produk.html" class="item-link">
+                            	<img src="img/sayuran.png" class="produk-rounded" />
+                            </a>
+                            <a href="#" class="sayuran">Info</a><hr>
+                            
+                        	<b>Daging</b><br>
+                            <a href="zonk.html" class="item-link">
+                            	<img src="img/daging.jpg" class="produk-rounded" />
+                            </a>
+                            <a href="#" class="daging">Info</a><hr>
+                            
+                        	<b>Bumbu Dapur</b><br>
+                            <a href="zonk.html" class="item-link">
+                            	<img src="img/bumbu.jpg" class="produk-rounded" />
+                            </a>
+                            <a href="#" class="bumbu">Info</a><hr>
+                        </p>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="tab3" class="page-content tab">     
+                    <div class="content-block">
+                      <div class="list-block">
+                        <center><h2>Pengantar</h2></center>
+                        <ul><hr>
+                          <li><a href="#" class="P00001">
+                              <div class="item-content">Zikran<br>P00001
+                                <div class="item-media"><img src="img/zikran.jpg" class="pengantar-circle" /></div>
+                              </div>
+                              </a>
+                          </li><hr>
+                          <li><a href="#" class="P00002">
+                              <div class="item-content">Laode<br>P00002
+                                <div class="item-media"><img src="img/iwan.jpg" class="pengantar-circle" /></div>
+                              </div>
+                              </a>
+                          </li><hr>
+                          <li><a href="#" class="P00003">
+                              <div class="item-content">Fajar<br>P00003
+                                <div class="item-media"><img src="img/Fajar.jpg" class="pengantar-circle" /></div>
+                              </div>
+                              </a>
+                          </li><hr>
+                          
+                        </ul>
+                      </div>   
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <script type="text/javascript" src="js/kitchen-sink.js"></script>
+	<!--script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/data.js"></script-->
+  </body>
+</html>

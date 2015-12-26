@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <title>Potomu</title>
+    <link rel="stylesheet" href="css/framework7.material.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.css">
+    <link rel="stylesheet" href="css/my-app.css">
+    <!--link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css"-->
+    <link rel="icon" href="img/logo.png">
+    <script src="js/scripts.js"></script>
+    <script>	
+      var i = 0;
+        var counter = setInterval(function(){
+          i++;
+          if(i<100){
+            $('.progress-bar').css('width', i+'%');
+          } else {
+            clearTimeout(counter);
+            window.location.replace('login.html');
+          }
+          
+        }, 30);	
+    </script>
+  </head>
+  <body onLoad="doOnOrientationChange();">
+  <div class="page-content">  
+    <div class="content-block">
+    	<div class="logox">
+            <center>
+                <img src="img/Logo.png" width="150px" height="150px"><br>
+                <img src="img/loader.gif" width="150px" height="150px"><br>
+                Copyright &copy; Potomu 2016
+            </center>
+        </div>
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <script type="text/javascript" src="js/kitchen-sink.js"></script>
+    </div>
+  </div>
+  </body>
+</html>
